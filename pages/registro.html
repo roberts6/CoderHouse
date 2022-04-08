@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DropIt</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="/images/solapa caja.jpeg" type="image/x-icon">
+<link rel="stylesheet" href="../css/estilos.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <!--Banner-->
+   <header class="banner">
+        <img src="/images/banner.webp" alt="banner promos">
+</header>
+
+<!--menu hamburguesa-->
+<main class="main">
+  <div class="menuHamburguesa">
+   <nav class="menuDesplegable">
+     <ul><i class="fa-solid fa-bars"></i>
+       <li class="menuDesplegable__iconos"><a href="../pages/registro.html" id="menu_on"><i class="fa-solid fa-box-open"></i></a>Registrate</li>
+       <li class="menuDesplegable__iconos"><a href="#"><i class="fa-solid fa-box-archive"></i></a>Tu cuenta</li>
+       <li class="menuDesplegable__iconos"><a href="../pages/registroDroper.html"><i class="fa-solid fa-shop"></i></a>Dropers</li>
+     </ul>
+    </nav>
+  </div>
+
+<!--título-->
+<div class="titulos">
+        <section>
+         <h1 class="titulo">DropIt</h1>
+         <h3 class="subtitulo"><strong>donde quieras, cuando quieras</strong></h3>
+        </section>
+</div>
+
+<!--Formulario-->
+<div class="formRegistro">
+<form action="" method="post" id="" class="formulario-registro">
+<fieldset>
+<div class="formulario-registro__foto">
+    <label for="foto">Foto</label>
+    <i class="fa-solid fa-camera-retro"><input type="file" name="foto" id="foto" required></i>
+</div>
+    <br>
+<div class="formulario-registro__nombreApellido">
+      <label for="nombreCompleto">Nombre: </label>
+      <input type="text" name="apellido" placeholder="ingresa tu nombre y apellido" class="placeholder">
+</div>
+    <br><br>
+<div class="formulario-registro__edad">    
+ <div class="formulario-registro__botonMayor">
+    <label for="edad">puedes tomar decisiones?</label>
+    <br>
+    <label for="mayor18">Soy mayor 18</label>
+    <input type="radio" name="mayor18" value="mayor18">
+ </div>
+  <div class="formulario-registro__botonMenor">
+    <label for="edad">Soy menor 18</label>
+    <input type="radio" name="menor18" value="menor18">
+  </div>    
+</div>
+<br>
+<div class="formulario-registro__sexo">
+  <label for="">qué se adapta mejor a vos?</label>
+    <select name="sexo" id="">
+        <option value="hombre">hombre</option>
+        <option value="mujer">mujer</option>
+        <option value="otro">otro</option>     
+    </select>
+</div>
+<br>
+<div class="formulario-registro__telefono">
+  <label for="">no te vamos a llamar pero por si acaso...</label>
+    <select name="caracteristica" id="">
+        <option value="argentina">+54</option>
+        <option value="mexico">+52</option>
+        <option value="uruguay">+598</option>     
+    </select>
+  <input type="number" name="telefono" id="telefono" placeholder="tu teléfono" class="placeholder" required>
+</div>
+<br>
+<div class="formulario-registro__mail">
+   <label for="">Tu correo nos permite mantenerte informad@</label>
+   <input type="email" name="correo" id="" placeholder="alguien@algo.com" class="placeholder" required>
+</div>
+<br><br>
+<!--botones con acciones para el formulario-->
+<div class="formulario-registro__botonos">
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Borrar Formulario">
+</div>
+</fieldset>
+</form>
+</div>
+
+
+<!--intento de ícono con regreso a home
+
+<div class="regresoHome">
+        <a href="/index.html"><i class="fa-solid fa-house"></i></a>
+</div>
+
+-->
+<div class="botonRegreso">
+        <form class="regresoHome">
+              <a href="../index.html"><input type="button" value="Home"></a>
+        </form>
+</div>
+
+<div class="chat">
+  <i class="fa-brands fa-whatsapp"></i>
+  <p class="anuncio">
+    <strong>Dudas?</strong>
+  </p>
+</div>
+<br>
+<br>
+<div class="footer">
+        <footer>
+            <section class="iconos">
+              <li class="info">
+                    <a href="/pages/nosotros.html"><i class="fa-solid fa-users"></i></a>
+                    <p class="anuncio">
+                        <strong>nosotros</strong> 
+                    </p>
+              </li>
+              
+              <li class="info">
+                    <a href="/pages/preguntas.html"><i class="fa-solid fa-question"></i></a>
+                    <p class="anuncio">
+                        <strong>preguntas</strong> 
+                    </p> 
+              </li>
+            
+                <li class="info">
+                    <a href="/pages/mediosDePago.html"><i class="fa-regular fa-credit-card"></i></a>
+                    <p class="anuncio">
+                        <strong>medios de pago</strong>
+                    </p>
+                </li>
+            </section>
+                <br>
+            <section class="copyright"><strong>Copyright © 1999-2022 DropIt S.R.L.</strong></section>
+        </footer>
+</div>
+</main>
+</body>
+</html>

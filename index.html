@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DropIt</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="/images/solapa caja.jpeg" type="image/x-icon">
+<link rel="stylesheet" href="/css/estilos.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--Banner-->
+<header class="banner">
+  <div class="banner__carrusel">
+    <div class="banner__carrusel__imagenes">
+      <img src="./images/banner.webp" alt="" id="banner__carrusel__imagen-1">
+    </div>
+     
+    <div class="banner__carrusel__imagenes">
+      <img src="./images/bannerRosa.jpg" alt="" id="banner__carrusel__imagen-2">
+    </div> 
+
+    <div class="banner__carrusel__imagenes">
+      <img src="./images/decathlonBanner.jpg" alt="" id="banner__carrusel__imagen-3">
+    </div>
+  </div>  
+  <div class="banner__carrusel__botones">
+      <a href="#banner__carrusel__imagen-1">.</a>
+      <a href="#banner__carrusel__imagen-2">.</a>
+      <a href="#banner__carrusel__imagen-3">.</a>
+  </div>
+</header>
+
+<!--menu hamburguesa-->
+<main class="main">
+  <div class="menuHamburguesa">
+   <nav class="menuDesplegable">
+     <ul><i class="fa-solid fa-bars"></i>
+       <li class="menuDesplegable__iconos"><a href="./pages/registro.html" id="menu_on"><i class="fa-solid fa-box-open"></i></a>Registrate</li>
+       <li class="menuDesplegable__iconos"><a href="#"><i class="fa-solid fa-box-archive"></i></a>Tu cuenta</li>
+       <li class="menuDesplegable__iconos"><a href="./pages/registroDroper.html"><i class="fa-solid fa-shop"></i></a>Dropers</li>
+     </ul>
+    </nav>
+  </div>
+
+<!--título-->
+
+<div class="titulos">
+  <section>
+   <h1 class="titulo">DropIt</h1>
+   <h3 class="subtitulo"><strong>donde quieras, cuando quieras</strong></h3>
+  </section>
+</div>
+
+<!--mapa con opciones-->
+
+<div class="mapa">
+ <section>
+   <div id="opciones">
+     <label for="Cuando"></label>
+     <input type="date" id="Cuando" name="inicio"
+       value="Cuándo?"
+       min="2022-01-01" max="2050-12-31">
+    <form action="">
+        <select name="donde">
+           <option selected value="0"> Elige una opción </option>
+              <optgroup label="CABA"> 
+              <option value="1">Solar de la Abadía</option> 
+              <option value="2">YPF Av. del Libertador 5002</option> 
+              <option value="3">Solo Deportes Av. Acoyte 51</option> 
+            </optgroup> 
+            <optgroup label="Gran Buenos Aires"> 
+               <option value="4">Carne Av. del Libertador 2417</option> 
+               <option value="5">Shell Av. de Mayo 2651</option> 
+               <option value="6">Kinderland Av. de Mayo 315</option> 
+            </optgroup> 
+        </select>
+    </form>
+       <input type="time" name="hora" id="">
+   </div>
+       <br>
+          <div id="googleMap">
+             <img src="images/mapa.jpeg" alt="geolocalización">
+          </div>
+ </section>
+</div>
+
+<div class="chat">
+  <i class="fa-brands fa-whatsapp"></i>
+    <p class="anuncio">
+      <strong>Dudas?</strong>
+    </p>
+</div>
+
+<div class="footer">
+<footer>
+    <section class="iconos">
+      <li class="info">
+            <a href="pages/nosotros.html"><i class="fa-solid fa-users"></i>
+            <p class="anuncio">
+                <strong>nosotros</strong> 
+            </p>
+          </a>
+      </li>
+      <br>
+      <li class="info">
+            <a href="pages/preguntas.html"><i class="fa-solid fa-question"></i>
+            <p class="anuncio">
+                <strong>preguntas</strong> 
+            </p> 
+          </a>
+      </li>
+    <br>
+        <li class="info">
+            <a href="pages/mediosDePago.html"><i class="fa-regular fa-credit-card"></i>
+            <p class="anuncio">
+                <strong>medios de pago</strong>
+            </p>
+        </li>
+           </a>
+    </section>
+        <br>
+    <section class="copyright"><strong>Copyright © 1999-2022 DropIt S.R.L.</strong></section>
+</footer>
+</div>
+</main>
+</body>
+</html>
