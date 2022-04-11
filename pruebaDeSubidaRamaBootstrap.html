@@ -4,15 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!--Bootstrap-->
+    <link rel="shortcut icon" href="/images/solapa caja.jpeg" type="image/x-icon">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Bootstrap CDN CSS
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>Document</title>
+    -->
+
+<!--Bootstrap CSS descarga-->
+<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+
+    <title>DropIt</title>
 </head>
 <body>
-    <div class="container">
-        <img src="/images/decathlonBanner.jpg" class="img-fluid" alt="">
+    <div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./images/banner.webp" class="d-block w-100" alt="Mercado-Libre">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/bannerRosa.jpg" class="d-block w-100" alt="Juguetes">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/decathlonBanner.jpg" class="d-block w-100" alt="Decathlon">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+         </div>
     </div>
 
+    <!--Título, subtítulo y menú hamburguesa-->
+    <div class="grid position-relative">
+        <div class="g-col text-center g-start">
+            <div class="g-col-10"><h1 class="display-1 ">DropIt</h1></div>
+            <div class="position-absolute top-0 end-0 translate-middle-x w-auto p-2"><i class="fa-solid fa-bars"></i></div>
+        </div>
+        <div class="g-col">
+             <h3 class="text-muted text-center">Cuando quieras, donde quieras</h3> 
+        </div>
+      </div>
+
+<!--Mapa con opciones-->
+      <div class="container">
+            <div class="row">
+              <div class="col-2">
+                
+              </div>
+              <div class="col-8 text-center">
+                opciones de mapa
+              </div>
+              <div class="col-2">
+                
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-2">
+                
+              </div>
+              <div class="col-8 text-center">
+                <img src="./images/mapa.jpeg" class="rounded mx-auto center" alt="Mapa">
+              </div>
+              <div class="col-2">
+                
+              </div>
+            </div>
+            <div class="row">
+                    <div class="col-2">
+                      
+                    </div>
+                    <div class="col-8 text-center">
+                     nav
+                    </div>
+                    <div class="col-2">
+                      
+                    </div>
+                  </div>
+          </div>
+
+<!--Bootstrap JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
