@@ -14,10 +14,10 @@
 <!--Bootstrap CSS descarga-->
 <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
 
-    <title>Registro</title>
+    <title>Registro Dropers</title>
 </head>
 <body>
-   <!--Carousel-->
+    <!--Carousel-->
     <div>
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -69,14 +69,14 @@
       </div>
 <br><br>
 <!--Formulario-->
-      <div class="formularioRegistro col-8">
-            <div class="formularioRegistro__foto col-7">
-                    <strong>Foto <i class="fa-solid fa-camera-retro"></i></strong>
-                <div class="input-group mb-3">
-                   <input type="file" class="form-control" id="inputGroupFile02">
-                   <label class="input-group-text" for="inputGroupFile02">Subir</label>
-                </div>
+      <div class="formularioRegistro col-8 ">
+          <div class="formularioRegistro__nombreLocal">
+            <div class="input-group d-flex flex-column">
+                    <b>Nombre de tu local/compañía</b>
+                    <input type="text" aria-label="nombre" class="form-control w-25">
+                    <input type="text" aria-label="direccion" class="form-control w-25">
             </div>
+          </div>
 
             <div class="formularioRegistro__nombre-usuario col-7">
                     <form class="row g-3">
@@ -161,8 +161,8 @@
         </div>
 <br>
    <div class="formularioRegistro__mail col-7">
-        <div class="input-group mb-3 w-30">
-                <input type="text" class="form-control w-20" placeholder="Tu correo nos ayuda a mantenerte informado" aria-label="alguien@algo.com" aria-describedby="basic-addon2">
+        <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="alguien@algo.com" aria-describedby="basic-addon2">
                 <span class="input-group-text" id="basic-addon2"><i class="fa-solid fa-envelope-circle-check"></i></span>
         </div>
    </div>
