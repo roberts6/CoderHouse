@@ -69,114 +69,190 @@
       </div>
 <br><br>
 <!--Formulario-->
-      <div class="formularioRegistro col-8 ">
+      <div class="formularioRegistro col-8 ms-3">
           <div class="formularioRegistro__nombreLocal">
             <div class="input-group d-flex flex-column">
                     <b>Nombre de tu local/compañía</b>
-                    <input type="text" aria-label="nombre" class="form-control w-25">
-                    <input type="text" aria-label="direccion" class="form-control w-25">
+                    <input type="text" aria-label="nombre" placeholder="Nombre de tu local" class="form-control w-25">
+                    <input type="text" aria-label="direccion" placeholder="Dirección" class="form-control w-25">
             </div>
           </div>
 
-            <div class="formularioRegistro__nombre-usuario col-7">
-                    <form class="row g-3">
-                            <div class="col-md-4">
-                              <label for="validationServer01" class="form-label">Nombre</label>
-                              <input type="text" class="form-control is-valid" id="validationServer01" value="Martin" required>
-                              <div class="valid-feedback">
-                                Looks good!
-                              </div>
-                            </div>
-                            <div class="col-md-4">
-                              <label for="validationServer02" class="form-label">Apellido</label>
-                              <input type="text" class="form-control is-valid" id="validationServer02" value="Palermo" required>
-                              <div class="valid-feedback">
-                                Looks good!
-                              </div>
-                            </div>
-                            <div class="col-md-4">
-                              <label for="validationServerUsername" class="form-label">Usuario</label>
-                              <div class="input-group has-validation">
-                                <span class="input-group-text" id="inputGroupPrepend3">@</span>
-                                <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
-                                <div id="validationServerUsernameFeedback" class="invalid-feedback">
-                                  Por favor elegí tu nombre de usuario
-                                </div>
-                              </div>
-                            </div>
-                          </form>
+            <div class="formularioRegistro__cantidadLocales col-3 mt-5">
+              <b>Cantidad de locales</b>
+              <select class="form-select text-center w-10" multiple aria-label="">
+                <option selected>Cuántos?</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="+10">+10</option>
+              </select>
             </div>
 
 <br>
-        <div class="formularioRegistro__edad col-7">
-            <strong>Podés tomar decisiones?</strong>
-            <br>
-            <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                    <label class="form-check-label" for="flexRadioDefault1">
-                     Soy mayor de edad
-                    </label>
-            </div>
-            <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                    <label class="form-check-label" for="flexRadioDefault2">
-                     Tengo menos de 18
-                    </label>
-            </div>
-        </div>
-<br>
-        <div class="formularioRegistro__sexo col-7">
-            <strong>Qué se adapta mejor a vos?</strong>
-                <div class="btn-group">
-                        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fa-solid fa-venus-mars"></i>
-                        </button>
-                        <ul class="dropdown-menu">
-                    <li>
-                              <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                <label class="form-check-label" for="flexRadioDefault1">
-                                 Hombre
-                                </label>
-                        </div>
-                    </li>
-                          <li>
-                                <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                        <label class="form-check-label" for="flexRadioDefault1">
-                                         Mujer
-                                        </label>
-                                </div>
-                          </li>
-                          <li>
-                                <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                        <label class="form-check-label" for="flexRadioDefault1">
-                                         Otro
-                                        </label>
-                                </div>
-                          </li>
-                        </ul>
+        <div class="formularioRegistro__dias col-12">
+            <strong>Cuándo pueden ir nuestros clientes por sus paquetes?</strong>
+              <div class="form-check form-switch col-8 d-flex align-items-center">
+                <input class="form-check-input col-2" type="checkbox" role="switch" id="flexSwitchCheckDefault" checked>
+                <label class="form-check-label mx-2" for="flexSwitchCheckDefault">Lunes</label>
+                <b>de</b>
+                <div class="input-group mx-2">
+                    <input type="text" class="form-control clockpicker text-center" value="09:00">
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-time"></span>
+                    </span>
                 </div>
+                <b>a</b> 
+                <div class="input-group clockpicker mx-2">
+                    <input type="text" class="form-control text-center" value="21:00">
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-time"></span>
+                    </span>
+                </div>               
+              </div>
+
+              <div class="form-check form-switch col-8 d-flex align-items-center">
+                  <input class="form-check-input col-2" type="checkbox" role="switch" id="flexSwitchCheckDefault" checked>
+                  <label class="form-check-label mx-2" for="flexSwitchCheckDefault">Martes</label>
+                  <b>de</b>
+                  <div class="input-group mx-2">
+                      <input type="text" class="form-control clockpicker text-center" value="09:00">
+                      <span class="input-group-addon">
+                          <span class="glyphicon glyphicon-time"></span>
+                      </span>
+                  </div>
+                  <b>a</b> 
+                  <div class="input-group clockpicker mx-2">
+                      <input type="text" class="form-control text-center" value="21:00">
+                      <span class="input-group-addon">
+                          <span class="glyphicon glyphicon-time"></span>
+                      </span>
+                  </div>                
+                </div>
+
+                <div class="form-check form-switch col-8 d-flex align-items-center">
+                    <input class="form-check-input col-2" type="checkbox" role="switch" id="flexSwitchCheckDefault" checked>
+                    <label class="form-check-label mx-2" for="flexSwitchCheckDefault">Miércoles</label>
+                    <b>de</b>
+                    <div class="input-group mx-2">
+                        <input type="text" class="form-control clockpicker text-center" value="09:00">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-time"></span>
+                        </span>
+                    </div>
+                    <b>a</b> 
+                    <div class="input-group clockpicker mx-2">
+                        <input type="text" class="form-control text-center" value="21:00">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-time"></span>
+                        </span>
+                    </div>                   
+                  </div>
+
+                  <div class="form-check form-switch col-8 d-flex align-items-center">
+                      <input class="form-check-input col-2" type="checkbox" role="switch" id="flexSwitchCheckDefault" checked>
+                      <label class="form-check-label mx-2" for="flexSwitchCheckDefault">Jueves</label>
+                      <b>de</b>
+                      <div class="input-group mx-2">
+                          <input type="text" class="form-control clockpicker text-center" value="09:00">
+                          <span class="input-group-addon">
+                              <span class="glyphicon glyphicon-time"></span>
+                          </span>
+                      </div>
+                      <b>a</b> 
+                      <div class="input-group clockpicker mx-2">
+                          <input type="text" class="form-control text-center" value="21:00">
+                          <span class="input-group-addon">
+                              <span class="glyphicon glyphicon-time"></span>
+                          </span>
+                      </div>                     
+                    </div>
+
+                    <div class="form-check form-switch col-8 d-flex align-items-center">
+                        <input class="form-check-input col-2" type="checkbox" role="switch" id="flexSwitchCheckDefault" checked>
+                        <label class="form-check-label mx-2" for="flexSwitchCheckDefault">Viernes</label>
+                        <b>de</b>
+                        <div class="input-group mx-2">
+                            <input type="text" class="form-control clockpicker text-center" value="09:00">
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-time"></span>
+                            </span>
+                        </div>
+                        <b>a</b> 
+                        <div class="input-group clockpicker mx-2">
+                            <input type="text" class="form-control text-center" value="21:00">
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-time"></span>
+                            </span>
+                        </div>                       
+                      </div>
+
+                      <div class="form-check form-switch col-8 d-flex align-items-center">
+                          <input class="form-check-input col-2" type="checkbox" role="switch" id="flexSwitchCheckDefault" checked>
+                          <label class="form-check-label mx-2" for="flexSwitchCheckDefault">Sábado</label>
+                          <b>de</b>
+                          <div class="input-group mx-2">
+                              <input type="text" class="form-control clockpicker text-center" value="09:00">
+                              <span class="input-group-addon">
+                                  <span class="glyphicon glyphicon-time"></span>
+                              </span>
+                          </div>
+                          <b>a</b> 
+                          <div class="input-group clockpicker mx-2">
+                              <input type="text" class="form-control text-center" value="21:00">
+                              <span class="input-group-addon">
+                                  <span class="glyphicon glyphicon-time"></span>
+                              </span>
+                          </div>                         
+                        </div>
+
+                        <div class="form-check form-switch col-8 d-flex align-items-center">
+                            <input class="form-check-input col-2" type="checkbox" role="switch" id="flexSwitchCheckDefault" checked>
+                            <label class="form-check-label mx-2" for="flexSwitchCheckDefault">Domingo</label>
+                            <b>de</b>
+                            <div class="input-group mx-2">
+                                <input type="text" class="form-control clockpicker text-center" value="09:00">
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-time"></span>
+                                </span>
+                            </div>
+                            <b>a</b> 
+                            <div class="input-group clockpicker mx-2">
+                                <input type="text" class="form-control text-center" value="21:00">
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-time"></span>
+                                </span>
+                            </div>                           
+                          </div>
+
+        </div>     
+<br>
+        <div class="formularioRegistro__mailDropers col-7">
+            <strong>Tu correo nos ayuda a mantenerte informad@</strong>
+            <div class="formularioRegistro__mail col-7">
+                <div class="input-group mb-3 w-30">
+                        <input type="text" class="form-control w-20 text-center" placeholder="alguien@algo.com" aria-label="alguien@algo.com" aria-describedby="basic-addon2">
+                        <span class="input-group-text" id="basic-addon2"><i class="fa-solid fa-envelope-circle-check"></i></span>
+                </div>
+           </div>
+
+           <strong>Alguien más que deba estar al tanto?</strong>
+           <div class="formularioRegistro__mail col-7">
+               <div class="input-group mb-3 w-30">
+                       <input type="text" class="form-control w-20 text-center" placeholder="alguien@algo.com" aria-label="alguien@algo.com" aria-describedby="basic-addon2">
+                       <span class="input-group-text" id="basic-addon2"><i class="fa-solid fa-envelope-circle-check"></i></span>
+               </div>
+          </div>
+
         </div>
 <br>
-   <div class="formularioRegistro__mail col-7">
-        <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="alguien@algo.com" aria-describedby="basic-addon2">
-                <span class="input-group-text" id="basic-addon2"><i class="fa-solid fa-envelope-circle-check"></i></span>
-        </div>
-   </div>
-<br>
-<div class="form-check">
-        <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
-        <label class="form-check-label" for="invalidCheck3">
-          Acepto términos y condiciones
-        </label>
-        <div id="invalidCheck3Feedback" class="invalid-feedback">
-          Tenés que aceptar antes de subscribirte
-        </div>
-      </div>
-    </div>
     <div class="col-12">
       <button class="btn btn-primary" type="submit">Submit form</button>
     </div>
