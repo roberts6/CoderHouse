@@ -4,95 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>DropIt</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
-<link rel="shortcut icon" href="/images/solapa caja.jpeg" type="image/x-icon">
-<link rel="stylesheet" href="../css/estilos.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="../images/solapa caja.jpeg" type="image/x-icon">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Bootstrap CDN CSS
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    -->
+
+<!--Bootstrap CSS descarga-->
+<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+
+    <title>Registro Dropers</title>
 </head>
 <body>
-   <!--Banner-->
-   <header class="banner">
-        <img src="/images/banner.webp" alt="banner promos">
-</header>
-
-<!--menu hamburguesa-->
-<main class="main">
-    <div class="menuHamburguesa">
-     <nav class="menuDesplegable">
-       <ul><i class="fa-solid fa-bars"></i>
-         <li class="menuDesplegable__iconos"><a href="../pages/registro.html" id="menu_on"><i class="fa-solid fa-box-open"></i></a>Registrate</li>
-         <li class="menuDesplegable__iconos"><a href="#"><i class="fa-solid fa-box-archive"></i></a>Tu cuenta</li>
-         <li class="menuDesplegable__iconos"><a href="../pages/registroDroper.html"><i class="fa-solid fa-shop"></i></a>Dropers</li>
-       </ul>
-      </nav>
+    <!--Carousel-->
+    <div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../images/banner.webp" class="d-block w-100" alt="Mercado-Libre">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../images/bannerRosa.jpg" class="d-block w-100" alt="Juguetes">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../images/decathlonBanner.jpg" class="d-block w-100" alt="Decathlon">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+         </div>
     </div>
 
-<!--título-->
-<div class="titulos">
-        <section>
-         <h1 class="titulo">DropIt</h1>
-         <h3 class="subtitulo"><strong>donde quieras, cuando quieras</strong></h3>
-        </section>
-</div>
+    <!--Título, subtítulo y menú hamburguesa-->
+    <div class="grid position-relative">
+        <div class="g-col text-center g-start">
+            <div class="g-col-10"><h1 class="display-1 ">DropIt</h1></div>
+            <div class="position-absolute top-0 end-0 translate-middle-x w-auto p-2"><i class="fa-solid fa-bars"></i>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="../pages/registro.html"><i class="fa-solid fa-box-open"></i>Registrate</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-box-archive"></i>Tu cuenta</a></li>
+                      <li><a class="dropdown-item" href="../pages/registroDroper.html"><i class="fa-solid fa-shop"></i>Dropers</a></li>
+                    </ul>
+                  </div>
+            </i></div>
+        </div>
+        <div class="g-col">
+             <h3 class="text-muted text-center">Cuando quieras, donde quieras</h3> 
+        </div>
+      </div>
+<br><br>
 
-<!--cuerpo-->
-<div class="quienesSomos">
-<h2>Quiénes somos?</h2>
-<p class="texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur illum voluptatem perspiciatis quae corrupti quos ratione nobis dolore est, molestias ad illo totam natus ea iure accusamus neque rerum alias!</p>
-<br>
-<h2>Cuál es nuestra propuesta de valor?</h2>
-<p class="texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur illum voluptatem perspiciatis quae corrupti quos ratione nobis dolore est, molestias ad illo totam natus ea iure accusamus neque rerum alias!</p>
-<br>
-<h2>Qué gano siendo un comercio adherido?</h2>
-<p class="texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur illum voluptatem perspiciatis quae corrupti quos ratione nobis dolore est, molestias ad illo totam natus ea iure accusamus neque rerum alias!</p>
-</div>
-<br>
+<!--preguntas-->
+<div class="d-flex flex-column col-8 m-auto">
+    <div class="text-wrap text-center" style="">
+        <h2>Quiénes somos?</h2>
+                 <p class="texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur illum voluptatem perspiciatis  quae corrupti quos ratione nobis dolore est, molestias ad illo totam natus ea iure accusamus neque  rerum alias!
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem fugit commodi, in dolorum ipsam, aliquid consectetur molestias nihil quo dolores soluta iusto aut est corporis neque repellendus nisi praesentium illum!
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate reiciendis tempora assumenda numquam, nemo, quae aliquid optio, debitis reprehenderit nesciunt enim iste! Autem, cumque rem ex hic ut dolor debitis.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ad numquam maiores nam repellat dicta minus officiis, doloribus, corporis veritatis illum hic reprehenderit molestiae maxime veniam quis earum aliquam cum?
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi totam earum impedit aut rerum facere ea.  Molestiae autem, ducimus beatae nam, facilis fugiat fugit reprehenderit possimus dolorum mollitia  doloribus eligendi?
+                 </p>
+    </div> 
 
-<!--intento de ícono con regreso a home
+    <div class="text-wrap text-center" style="">
+        <h2>Cuál es nuestra propuesta de valor?</h2>
+                 <p class="texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur illum voluptatem perspiciatis  quae corrupti quos ratione nobis dolore est, molestias ad illo totam natus ea iure accusamus neque  rerum alias!
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem fugit commodi, in dolorum ipsam, aliquid consectetur molestias nihil quo dolores soluta iusto aut est corporis neque repellendus nisi praesentium illum!
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate reiciendis tempora assumenda numquam, nemo, quae aliquid optio, debitis reprehenderit nesciunt enim iste! Autem, cumque rem ex hic ut dolor debitis.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ad numquam maiores nam repellat dicta minus officiis, doloribus, corporis veritatis illum hic reprehenderit molestiae maxime veniam quis earum aliquam cum?
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi totam earum impedit aut rerum facere ea.  Molestiae autem, ducimus beatae nam, facilis fugiat fugit reprehenderit possimus dolorum mollitia  doloribus eligendi?
+                 </p>
+    </div> 
 
-<div class="regresoHome">
-        <a href="/index.html"><i class="fa-solid fa-house"></i></a>
-</div>
+    <div class="text-wrap text-center" style="">
+        <h2>Qué gano siendo un comercio adherido?</h2>
+                 <p class="texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur illum voluptatem perspiciatis  quae corrupti quos ratione nobis dolore est, molestias ad illo totam natus ea iure accusamus neque  rerum alias!
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem fugit commodi, in dolorum ipsam, aliquid consectetur molestias nihil quo dolores soluta iusto aut est corporis neque repellendus nisi praesentium illum!
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate reiciendis tempora assumenda numquam, nemo, quae aliquid optio, debitis reprehenderit nesciunt enim iste! Autem, cumque rem ex hic ut dolor debitis.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ad numquam maiores nam repellat dicta minus officiis, doloribus, corporis veritatis illum hic reprehenderit molestiae maxime veniam quis earum aliquam cum?
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi totam earum impedit aut rerum facere ea.  Molestiae autem, ducimus beatae nam, facilis fugiat fugit reprehenderit possimus dolorum mollitia  doloribus eligendi?
+                 </p>
+    </div> 
 
--->
-<div class="botonRegreso">
-        <form class="regresoHome">
-              <a href="../index.html"><input type="button" value="Home"></a>
-        </form>
-</div>
+</div>         
 <br>
+  <div class="formularioRegistro__home col-12 d-flex justify-content-center">
+    <a href="../index.html" class="btn btn-success justify-content-center"><i class="fa-solid fa-house-chimney"></i></a>
+  </div>
 <br>
-<div class="footer">
-        <footer>
-            <section class="iconos">
-              <li class="info">
-                    <a href="/pages/nosotros.html"><i class="fa-solid fa-users"></i></a>
-                    <p class="anuncio">
-                        <strong>nosotros</strong> 
-                    </p>
-              </li>
-              
-              <li class="info">
-                    <a href="/pages/preguntas.html"><i class="fa-solid fa-question"></i></a>
-                    <p class="anuncio">
-                        <strong>preguntas</strong> 
-                    </p> 
-              </li>
-            
-                <li class="info">
-                    <a href="/pages/mediosDePago.html"><i class="fa-regular fa-credit-card"></i></a>
-                    <p class="anuncio">
-                        <strong>medios de pago</strong>
-                    </p>
-                </li>
-            </section>
-                <br>
-            <section class="copyright"><strong>Copyright © 1999-2022 DropIt S.R.L.</strong></section>
-        </footer>
-</div>
-</main>
+                    <div class="container-fluid text-center">
+                        <strong>Copyright © 1999-2022 DropIt S.R.L.</strong>
+                    </div>
+
+<!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
