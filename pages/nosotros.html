@@ -11,12 +11,44 @@
 <link rel="shortcut icon" href="/images/solapa caja.jpeg" type="image/x-icon">
 <link rel="stylesheet" href="../css/estilos.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!--Bootstrap css-->
+<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+
 </head>
 <body>
-   <!--Banner-->
-   <header class="banner">
-        <img src="/images/banner.webp" alt="banner promos">
-</header>
+   <!--Carousel-->
+<header>
+        <div class="Carousel">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="../images/banner.webp" class="d-block w-100" alt="Mercado-Libre">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../images/bannerRosa.jpg" class="d-block w-100" alt="Juguetes">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../images/decathlonBanner.jpg" class="d-block w-100" alt="Decathlon">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+          </div>
+        </div>
+      <header>
+      
 
 <!--menu hamburguesa-->
 <main class="main">
@@ -58,15 +90,16 @@
 </div>
 
 -->
-<div class="botonRegreso">
-        <form class="regresoHome">
-              <a href="../index.html"><input type="button" value="Home"></a>
-        </form>
-</div>
+
 <br>
 <br>
 <div class="footer">
         <footer>
+            <!--botón regreso HOME-->
+                <div class="formularioRegistro__home col-12 d-flex justify-content-center">
+                        <a href="../index.html" class="btn btn-success justify-content-center"><i class="fa-solid fa-house-chimney"></i></a>
+                </div>
+                
             <section class="iconos">
               <li class="info">
                     <a href="/pages/nosotros.html"><i class="fa-solid fa-users"></i></a>
@@ -94,5 +127,8 @@
         </footer>
 </div>
 </main>
+
+<!--BootsTrap js-->
+<script src="../bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
