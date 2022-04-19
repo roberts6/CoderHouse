@@ -102,18 +102,25 @@
         font-size: 3vw;
     }
     
-    .menuHamburguesa ul li{
-    display: none;
+
+//anidaciones
+    .menuHamburguesa{
+            li{
+             display: none;
+            }
     }
-    
-    .menuHamburguesa:hover li{
+
+    .menuHamburguesa:hover{
+         li{
       display: flex;
       margin-top: 1vw;
       text-align: right;
       z-index: 1000;
     }
+}
     
-    nav ul{
+    nav {
+        ul{
         display: flex;
         flex-direction: column;
         align-content: center;
@@ -121,20 +128,26 @@
         grid-column: 10;
         grid-row: 2/3;
     }
+}
     
     .menuDesplegable__iconos{
         font-size: 1vw;
         margin-right: 0.3vw;
     }
     
-    .menuDesplegable__iconos i{
+    .menuDesplegable__iconos {
+         i{
         font-size: 1.5vw;
         margin-right: 0.2vw;
     }
+}
     
-    .menuDesplegable__iconos :hover i{
+    .menuDesplegable__iconos :hover{
+         i{
      color: rgb(241, 187, 87);
     }
+}
+//fin anidaciones
     
     .mapa{
         display: flex;
