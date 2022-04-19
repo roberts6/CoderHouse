@@ -147,7 +147,6 @@
      color: rgb(241, 187, 87);
     }
 }
-//fin anidaciones
     
     .mapa{
         display: flex;
@@ -156,28 +155,34 @@
         margin: auto;
      }
     
-    #googleMap img{
+    #googleMap {
+        img{
         width: 50vw;
         cursor: zoom-in;
     }
-    
+}
+
     #opciones{
         display: flex;
         z-index: 1000;
     }
     
-    #opciones form select{
-        width: 10vw;
-        font-size: 1vw;
-        margin: 0% 1%;
-        cursor: pointer;
-    }
+    #opciones{
+        select{
+            width: 10vw;
+            font-size: 1vw;
+            margin: 0% 1%;
+            cursor: pointer;
+        }
+    } 
     
-    #opciones input{
-        width: 10vw;
-        font-size: 1vw;
-        cursor: pointer;
-        margin: auto;
+    #opciones {
+        input{
+            width: 10vw;
+            font-size: 1vw;
+            cursor: pointer;
+            margin: auto;
+        }
     }
     
     .iconos{
@@ -187,18 +192,20 @@
         margin: 2vw 0 0 0;
     }
     
-    .iconos li{
+    .iconos{
+        li{
             padding: 0vw 3vw;
     }
+    } 
     
-    
-    .info{
+    .info {
         text-align: center;
-    }
-    
-    .info a{
-        text-decoration: none;
-    }
+        a{
+            text-decoration: none;
+        }
+    } 
+
+    //fin de anidaciones
     
     .info strong{
         color: black;

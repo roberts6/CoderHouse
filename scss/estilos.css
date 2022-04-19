@@ -200,7 +200,7 @@ nav ul {
   z-index: 1000;
 }
 
-#opciones form select {
+#opciones select {
   width: 10vw;
   font-size: 1vw;
   margin: 0% 1%;
