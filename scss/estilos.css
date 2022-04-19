@@ -169,7 +169,7 @@ nav ul {
   margin-right: 0.2vw;
 }
 
-.menuDesplegable__iconos :hover i {
+.menuDesplegable__iconos i:hover {
   color: #f1bb57;
 }
 

@@ -114,7 +114,7 @@ nav ul {
   font-size: 1.5vw;
   margin-right: 0.2vw; }
 
-.menuDesplegable__iconos :hover i {
+.menuDesplegable__iconos i:hover {
   color: #f1bb57; }
 
 .mapa {
