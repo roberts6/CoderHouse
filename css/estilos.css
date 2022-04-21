@@ -252,7 +252,13 @@ label {
   width: 20vw; }
 
 .formulario-registro__telefono select {
-  width: 8vw; }
+  width: 8vw;
+  font-size: 1.5vw;
+  text-align: center; }
+
+.formulario-registro__sexo select {
+  font-size: 1.5vw;
+  text-align: center; }
 
 .cantidadLocales {
   width: 8vw; }

@@ -1,5 +1,6 @@
 //variable
 $color-iconos-hover: rgb(241, 187, 87);
+$tamano-texto-select: 1.5vw;
 
 
 *{padding: 0;
@@ -334,7 +335,17 @@ $color-iconos-hover: rgb(241, 187, 87);
     
     .formulario-registro__telefono select{
         width: 8vw;
+        font-size: $tamano-texto-select;
+        text-align: center;
     }
+
+    .formulario-registro__sexo{
+        select{
+            font-size: $tamano-texto-select;
+            text-align: center;
+        }
+    }
+
     
     .cantidadLocales{
         width: 8vw;
