@@ -2,6 +2,16 @@
 $color-iconos-hover: rgb(241, 187, 87);
 $tamano-texto-select: 1.5vw;
 $color-titulo: #2f71d3;
+$prueba: green;
+
+
+$primary: $color-titulo;
+$warning: $prueba;
+@import "../bootstrap/css/bootstrap-utilities.css";
+
+
+
+
 
 *{padding: 0;
     margin: 0;
