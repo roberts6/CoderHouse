@@ -9,8 +9,18 @@ $primary: $color-titulo;
 $warning: $prueba;
 @import "../bootstrap/css/bootstrap-utilities.css";
 
+/* declaración de map-get*/
+$redes:(
+    color: #4977bd,
+    margin: 4% 0 4% 0,
+    font-size: 2vw
+);
 
-
+/* declaración mixins */
+@mixin posicion {
+    display: flex;
+    flex-direction: column;
+}
 
 
 *{padding: 0;
@@ -33,11 +43,10 @@ $warning: $prueba;
         height: 40vh;
     }
     
-    
+    /* uso mixin */
     body{
     background-color: rgba(255, 255, 255, 0.911);
-    display: flex;
-    flex-direction: column;
+    @include posicion();
     justify-content: center;
     margin: auto;
     font-size: 2vw;
@@ -107,11 +116,11 @@ $warning: $prueba;
       z-index: 1000;
     }
 }
-    
+
+/* uso mixin */
     nav {
         ul{
-        display: flex;
-        flex-direction: column;
+        @include posicion();
         align-content: center;
         align-items: flex-end;
         grid-column: 10;
@@ -139,10 +148,10 @@ $warning: $prueba;
      }
     }
 }
-    
+
+/* uso mixin */
     .mapa{
-        display: flex;
-        flex-direction: column;
+        @include posicion();
         justify-content: center;
         margin: auto;
      }
@@ -196,6 +205,23 @@ $warning: $prueba;
             text-decoration: none;
         }
     } 
+
+/* map-get*/ 
+    .redes-sociales{
+        grid-row: 9/10;
+        grid-column: 10;
+        .redes-iconos{
+            i{
+            margin: map-get($redes, margin );
+            color: map-get($redes , color );
+            font-size: map-get($redes , font-size );
+            text-align: right;
+            &:hover{
+                color: $color-iconos-hover;
+            }
+        }
+        }
+    }
 
     //fin de anidaciones
     
