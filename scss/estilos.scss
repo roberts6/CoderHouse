@@ -121,8 +121,6 @@ $redes:(
     nav {
         ul{
         @include posicion();
-        align-content: center;
-        align-items: flex-end;
         grid-column: 10;
         grid-row: 2/3;
     }
@@ -206,7 +204,8 @@ $redes:(
         }
     } 
 
-/* map-get*/ 
+/* redes sociales */
+/* map-get */ 
     .redes-sociales{
         grid-row: 9/10;
         grid-column: 10;
@@ -356,8 +355,7 @@ $redes:(
     }
     
     .formulario-registro__edad{
-        display: flex;
-        flex-direction: column;
+        @include posicion();
     }
     
     .formulario-registro__botonMayor .formulario-registro__botonMenor{
@@ -370,18 +368,16 @@ $redes:(
         display: inline;
         width: 1.5vw;
     }
-    
-    .regresoHome input{
+   
+    /* uso extend */
+    .regresoHome{
         margin-right: 3%;
         font-size: 1.5vw;
     }
     
     .formulario-registro__botonos input{
-        margin-right: 3%;
-        font-size: 1.5vw;
+        @extend .regresoHome
     }
-    
-    
     
     
     /* GRID para HTML index */

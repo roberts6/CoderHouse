@@ -81,8 +81,6 @@ a i {
 nav ul {
   display: flex;
   flex-direction: column;
-  align-content: center;
-  align-items: flex-end;
   grid-column: 10;
   grid-row: 2/3; }
 
@@ -138,7 +136,8 @@ nav ul {
   .info a {
     text-decoration: none; }
 
-/* map-get*/
+/* redes sociales */
+/* map-get */
 .redes-sociales {
   grid-row: 9/10;
   grid-column: 10; }
@@ -260,15 +259,12 @@ label {
   display: flex;
   flex-direction: row; }
 
-.formulario-registro__botonos .regresoHome {
+.formulario-registro__botonos .regresoHome, .formulario-registro__botonos input {
   display: inline;
   width: 1.5vw; }
 
-.regresoHome input {
-  margin-right: 3%;
-  font-size: 1.5vw; }
-
-.formulario-registro__botonos input {
+/* uso extend */
+.regresoHome, .formulario-registro__botonos input {
   margin-right: 3%;
   font-size: 1.5vw; }
 
@@ -367,11 +363,11 @@ label {
   text-align: center;
   width: 20vw; }
 
-.regresoHome {
+.regresoHome, .formulario-registro__botonos input {
   display: flex;
   justify-content: center; }
 
-.regresoHome input {
+.regresoHome input, .formulario-registro__botonos input input {
   width: 6vw;
   height: 3vh;
   font-size: 1.4vh; }
