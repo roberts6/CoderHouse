@@ -370,13 +370,18 @@ $redes:(
     }
    
     /* uso extend */
-    .regresoHome{
+    .usoExtend{
         margin-right: 3%;
         font-size: 1.5vw;
     }
+
+
+    .regresoHome input{
+        @extend .usoExtend
+    }
     
     .formulario-registro__botonos input{
-        @extend .regresoHome
+        @extend .usoExtend
     }
     
     

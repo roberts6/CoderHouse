@@ -259,12 +259,12 @@ label {
   display: flex;
   flex-direction: row; }
 
-.formulario-registro__botonos .regresoHome, .formulario-registro__botonos input {
+.formulario-registro__botonos .regresoHome {
   display: inline;
   width: 1.5vw; }
 
 /* uso extend */
-.regresoHome, .formulario-registro__botonos input {
+.usoExtend, .regresoHome input, .formulario-registro__botonos input {
   margin-right: 3%;
   font-size: 1.5vw; }
 
@@ -363,11 +363,11 @@ label {
   text-align: center;
   width: 20vw; }
 
-.regresoHome, .formulario-registro__botonos input {
+.regresoHome {
   display: flex;
   justify-content: center; }
 
-.regresoHome input, .formulario-registro__botonos input input {
+.regresoHome input {
   width: 6vw;
   height: 3vh;
   font-size: 1.4vh; }
