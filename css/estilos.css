@@ -24,6 +24,7 @@ body {
   background-color: rgba(255, 255, 255, 0.911);
   display: flex;
   flex-direction: column;
+  align-items: end;
   justify-content: center;
   margin: auto;
   font-size: 2vw; }
@@ -37,9 +38,11 @@ body {
 
 nav {
   display: flex;
-  justify-content: right;
   margin: 1%;
-  cursor: pointer; }
+  cursor: pointer;
+  flex-direction: column;
+  align-content: flex-end;
+  align-items: flex-end; }
 
 a i {
   font-size: 2.5vw;
@@ -63,7 +66,9 @@ a i {
 
 .menuHamburguesa {
   grid-column: 10;
-  grid-row: 1; }
+  grid-row: 1;
+  display: block;
+  justify-content: right; }
 
 .menuHamburguesa i {
   font-size: 3vw; }
@@ -77,10 +82,12 @@ a i {
   text-align: right;
   z-index: 1000; }
 
-/* uso mixin */
+.menuDesplegable__absolute {
+  position: absolute; }
+  .menuDesplegable__absolute ul {
+    margin-top: 30%; }
+
 nav ul {
-  display: flex;
-  flex-direction: column;
   grid-column: 10;
   grid-row: 2/3; }
 
@@ -99,6 +106,7 @@ nav ul {
 .mapa {
   display: flex;
   flex-direction: column;
+  align-items: end;
   justify-content: center;
   margin: auto; }
 
@@ -252,7 +260,9 @@ label {
 
 .formulario-registro__edad {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  align-items: end;
+  align-items: flex-start; }
 
 .formulario-registro__botonMayor .formulario-registro__botonMenor {
   margin-top: 1%;

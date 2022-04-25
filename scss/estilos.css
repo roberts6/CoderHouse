@@ -1,3 +1,7 @@
+@charset "UTF-8";
+@import url(/Users/oscarroberts/Desktop/CoderHouse/DropIt/bootstrap/css/bootstrap-utilities.css);
+/* declaración de map-get*/
+/* declaración mixins */
 * {
   padding: 0;
   margin: 0;
@@ -21,32 +25,7 @@ header {
   height: 40vh;
 }
 
-/* carousel hecho en CSS
-    .banner__carrusel{
-        width: 100vw;
-        height: 20vw;
-        overflow: hidden;
-        text-decoration: none;
-    }
-    .banner__carrusel__imagenes{
-         width: 100%;
-         height: 100%;
-         overflow: hidden;
-         margin: 0;
-    }
-    .banner__carrusel__botones{
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        font-size: 5vw;
-        font-style: none;
-        margin-top: -3%;
-    }
-    .banner__carrusel__botones a{
-        padding: 0 2vw;
-        color: rgba(0, 0, 0, 0.452);
-    }
-    */
+/* uso mixin */
 body {
   background-color: rgba(255, 255, 255, 0.911);
   display: -webkit-box;
@@ -56,6 +35,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -120,6 +102,10 @@ a i {
   grid-column: 10;
   -ms-grid-row: 1;
   grid-row: 1;
+  display: block;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
 }
 
 .menuHamburguesa i {
@@ -139,6 +125,7 @@ a i {
   z-index: 1000;
 }
 
+/* uso mixin */
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -147,11 +134,9 @@ nav ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-line-pack: center;
-      align-content: center;
   -webkit-box-align: end;
       -ms-flex-align: end;
-          align-items: flex-end;
+          align-items: end;
   -ms-grid-column: 10;
   grid-column: 10;
   -ms-grid-row: 2;
@@ -173,6 +158,7 @@ nav ul {
   color: #f1bb57;
 }
 
+/* uso mixin */
 .mapa {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -181,6 +167,9 @@ nav ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -236,6 +225,27 @@ nav ul {
   text-decoration: none;
 }
 
+/* redes sociales */
+/* map-get */
+.redes-sociales {
+  -ms-grid-row: 9;
+  -ms-grid-row-span: 1;
+  grid-row: 9/10;
+  -ms-grid-column: 10;
+  grid-column: 10;
+}
+
+.redes-sociales .redes-iconos i {
+  margin: 4% 0 4% 0;
+  color: #4977bd;
+  font-size: 2vw;
+  text-align: right;
+}
+
+.redes-sociales .redes-iconos i:hover {
+  color: #f1bb57;
+}
+
 .info strong {
   color: black;
 }
@@ -272,12 +282,6 @@ nav ul {
 p {
   margin: 1% 10%;
   text-align: center;
-}
-
-.regresoHome {
-  text-align: center;
-  margin-top: 5%;
-  margin-bottom: 0%;
 }
 
 .mediosDePago {
@@ -396,6 +400,9 @@ label {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
 }
 
 .formulario-registro__botonMayor .formulario-registro__botonMenor {
@@ -414,12 +421,8 @@ label {
   width: 1.5vw;
 }
 
-.regresoHome input {
-  margin-right: 3%;
-  font-size: 1.5vw;
-}
-
-.formulario-registro__botonos input {
+/* uso extend */
+.usoExtend, .regresoHome input, .formulario-registro__botonos input {
   margin-right: 3%;
   font-size: 1.5vw;
 }

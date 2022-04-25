@@ -20,6 +20,7 @@ $redes:(
 @mixin posicion {
     display: flex;
     flex-direction: column;
+    align-items: end;
 }
 
 
@@ -61,10 +62,12 @@ $redes:(
     }
     
     nav{
-        display: flex;
-        justify-content: right;
-        margin: 1%; 
-        cursor: pointer;
+    display: flex;
+    margin: 1%;
+    cursor: pointer;
+    flex-direction: column;
+    align-content: flex-end;
+    align-items: flex-end;
     }
     
     a i{
@@ -94,6 +97,8 @@ $redes:(
     .menuHamburguesa{
         grid-column: 10;
         grid-row: 1;
+        display: block;
+        justify-content: right;
     }
     
     .menuHamburguesa i{
@@ -117,10 +122,15 @@ $redes:(
     }
 }
 
-/* uso mixin */
+.menuDesplegable__absolute{
+    position: absolute;
+    ul{
+        margin-top: 30%;
+    }
+}
+
     nav {
         ul{
-        @include posicion();
         grid-column: 10;
         grid-row: 2/3;
     }
@@ -356,6 +366,8 @@ $redes:(
     
     .formulario-registro__edad{
         @include posicion();
+        align-items: flex-start;
+
     }
     
     .formulario-registro__botonMayor .formulario-registro__botonMenor{
