@@ -99,10 +99,12 @@ $redes:(
         grid-row: 1;
         display: block;
         justify-content: right;
+        color: $color-titulo;
     }
     
     .menuHamburguesa i{
         font-size: 3vw;
+        color: $color-titulo;
     }
     
 
@@ -212,6 +214,14 @@ $redes:(
         a{
             text-decoration: none;
         }
+        i{
+            color: $color-titulo;
+        }
+        p{
+        strong{
+            color: $color-titulo;
+        }
+    }
     } 
 
 /* redes sociales */
@@ -262,6 +272,7 @@ $redes:(
     .copyright{
         width: 45vw;
         margin-top: 4%;
+        color: $color-titulo;
     }
     
     p{
@@ -364,6 +375,7 @@ $redes:(
         width: 8vw;
     }
     
+    /* uso mixin */
     .formulario-registro__edad{
         @include posicion();
         align-items: flex-start;

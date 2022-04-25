@@ -68,10 +68,12 @@ a i {
   grid-column: 10;
   grid-row: 1;
   display: block;
-  justify-content: right; }
+  justify-content: right;
+  color: #2f71d3; }
 
 .menuHamburguesa i {
-  font-size: 3vw; }
+  font-size: 3vw;
+  color: #2f71d3; }
 
 .menuHamburguesa li {
   display: none; }
@@ -143,6 +145,10 @@ nav ul {
   text-align: center; }
   .info a {
     text-decoration: none; }
+  .info i {
+    color: #2f71d3; }
+  .info p strong {
+    color: #2f71d3; }
 
 /* redes sociales */
 /* map-get */
@@ -179,7 +185,8 @@ nav ul {
 
 .copyright {
   width: 45vw;
-  margin-top: 4%; }
+  margin-top: 4%;
+  color: #2f71d3; }
 
 p {
   margin: 1% 10%;
@@ -258,6 +265,7 @@ label {
 .cantidadLocales {
   width: 8vw; }
 
+/* uso mixin */
 .formulario-registro__edad {
   display: flex;
   flex-direction: column;
