@@ -24,7 +24,6 @@ body {
   background-color: rgba(255, 255, 255, 0.911);
   display: flex;
   flex-direction: column;
-  align-items: end;
   justify-content: center;
   margin: auto;
   font-size: 2vw; }
@@ -108,7 +107,6 @@ nav ul {
 .mapa {
   display: flex;
   flex-direction: column;
-  align-items: end;
   justify-content: center;
   margin: auto; }
 
@@ -173,7 +171,7 @@ nav ul {
   width: 10vw;
   margin: 0; }
 
-.quienesSomos {
+.quienesSomos, .mediosDePago {
   text-align: center; }
 
 .quienesSomos__preguntas {
@@ -269,7 +267,6 @@ label {
 .formulario-registro__edad {
   display: flex;
   flex-direction: column;
-  align-items: end;
   align-items: flex-start; }
 
 .formulario-registro__botonMayor .formulario-registro__botonMenor {
@@ -277,7 +274,7 @@ label {
   display: flex;
   flex-direction: row; }
 
-.formulario-registro__botonos .regresoHome {
+.formulario-registro__botonos {
   display: inline;
   width: 1.5vw; }
 
@@ -354,8 +351,8 @@ label {
   grid-row: 2;
   font-size: 10.5vw;
   display: flex;
-  justify-content: flex-start;
-  flex-direction: column; }
+  flex-direction: column;
+  justify-content: flex-start; }
 
 .quienesSomosGrid__queEs {
   grid-column: 3/9;
@@ -381,15 +378,6 @@ label {
   text-align: center;
   width: 20vw; }
 
-.regresoHome {
-  display: flex;
-  justify-content: center; }
-
-.regresoHome input {
-  width: 6vw;
-  height: 3vh;
-  font-size: 1.4vh; }
-
 .footer {
   grid-column: 5/7;
   grid-row: 9;
@@ -403,15 +391,11 @@ label {
   font-size: 1.2vw; }
 
 /* GRID para HTML de nosotros */
-.quienesSomos {
+.quienesSomos, .mediosDePago {
   grid-column: 3/9;
   grid-row: 3; }
 
 /* GRID para HTML de medios de pago */
-.mediosDePago {
-  grid-column: 3/9;
-  grid-row: 3; }
-
 .tiendaDigital {
   grid-column: 3/9;
   grid-row: 5;
@@ -439,6 +423,8 @@ label {
     margin-right: -3vw; } }
 
 @media screen and (max-width: 531px) {
+  .formRegistro {
+    margin-left: 4vw; }
   .formulario-registro__telefono {
     display: flex;
     flex-direction: column; }
@@ -454,4 +440,15 @@ label {
     font-size: 2vw; }
   #opciones form select {
     display: flex;
-    height: 3vh; } }
+    height: 3vh; }
+  .redes-sociales {
+    grid-row: 5/10;
+    margin-top: auto; }
+    .redes-sociales .redes-iconos li {
+      margin-right: 1.5vw; }
+  .titulos {
+    grid-row: 1; }
+  .mediosDePago {
+    grid-row: 2; }
+  .tiendaDigital {
+    grid-row: 4; } }
