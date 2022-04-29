@@ -451,4 +451,10 @@ label {
   .mediosDePago {
     grid-row: 2; }
   .tiendaDigital {
-    grid-row: 4; } }
+    grid-row: 4; }
+  .menuHamburguesa i {
+    font-size: 6vw; }
+  .menuDesplegable__iconos {
+    font-size: 2vw; }
+    .menuDesplegable__iconos i {
+      font-size: 2vw; } }
