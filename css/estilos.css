@@ -440,7 +440,8 @@ label {
     font-size: 2vw; }
   #opciones form select {
     display: flex;
-    height: 3vh; }
+    height: 2.5vh;
+    width: 20vw; }
   .redes-sociales {
     grid-row: 5/10;
     margin-top: auto; }
