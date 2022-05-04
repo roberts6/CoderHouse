@@ -15,13 +15,39 @@ html {
 header {
   object-fit: cover; }
 
+.opcionesNUEVAS {
+  background-color: black;
+  display: flex;
+  justify-content: flex-end;
+  height: 6vh; }
+  .opcionesNUEVAS img {
+    width: 4vw;
+    margin-right: 1.5vw; }
+  .opcionesNUEVAS .nav {
+    align-content: center;
+    margin-right: 2vw; }
+    .opcionesNUEVAS .nav .nav-link {
+      color: white; }
+      .opcionesNUEVAS .nav .nav-link:hover {
+        font-style: italic;
+        font-weight: bolder;
+        color: white; }
+
+.tarjeta-presentacion {
+  display: flex;
+  flex-direction: row; }
+  .tarjeta-presentacion img {
+    width: 25vw; }
+  .tarjeta-presentacion .card-text {
+    font-size: 2vw; }
+
 .banner img {
   width: 100%;
   height: 40vh; }
 
 /* uso mixin */
 body {
-  background-color: rgba(255, 255, 255, 0.911);
+  background-color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -45,7 +71,7 @@ nav {
 
 a i {
   font-size: 2.5vw;
-  color: black; }
+  color: white; }
 
 .titulos {
   display: grid; }
@@ -162,7 +188,7 @@ nav ul {
       color: #f1bb57; }
 
 .info strong {
-  color: black; }
+  color: white; }
 
 .info a :hover {
   color: #f1bb57; }
