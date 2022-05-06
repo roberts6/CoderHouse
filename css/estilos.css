@@ -15,28 +15,56 @@ html {
 header {
   object-fit: cover; }
 
+.cabecera {
+  height: 7vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .cabecera a i {
+    font-size: 2.5vw;
+    color: #2f71d3; }
+    .cabecera a i:active {
+      color: #ffff00; }
+
 .opcionesNUEVAS {
-  background-color: black;
+  background-color: #c0c0c0;
   display: grid;
-  grid-row: 1;
+  grid-row: 2;
   grid-column: 1/11;
-  height: 7vh; }
+  height: 7vh;
+  justify-items: center; }
   .opcionesNUEVAS img {
     display: grid;
     grid-column: 1;
-    width: 4vw;
-    margin-right: 1.5vw; }
+    width: 6vh;
+    margin: 5%; }
   .opcionesNUEVAS .nav {
     grid-column: 13;
     align-content: center; }
     .opcionesNUEVAS .nav .nav-link {
-      color: white; }
+      color: #2f71d3; }
       .opcionesNUEVAS .nav .nav-link:hover {
         font-style: italic;
         font-weight: bolder;
-        color: white; }
+        color: #2f71d3; }
+
+.nav-item a {
+  text-decoration: none; }
+
+#carouselExampleCaptions {
+  grid-row: 3; }
+
+.carousel-inner {
+  position: relative;
+  overflow: hidden;
+  height: 25vh;
+  width: 100vw;
+  grid-column: 1/11;
+  margin: 0; }
 
 .tarjeta-presentacion {
+  grid-row: 4;
   grid-column: 1/11; }
   .tarjeta-presentacion img {
     width: 25vw; }
@@ -51,16 +79,15 @@ header {
   .presentacionDROPIT .presentacionDROPIT__texto {
     grid-column: 3/9;
     font-size: 1.5vw;
-    text-align: center; }
+    text-align: center;
+    color: #2f71d3; }
     .presentacionDROPIT .presentacionDROPIT__texto h1 {
-      font-size: 10vw; }
+      font-size: 10vw;
+      color: #2f71d3; }
     .presentacionDROPIT .presentacionDROPIT__texto span {
       font-weight: bold; }
     .presentacionDROPIT .presentacionDROPIT__texto img {
       width: 8%; }
-  .presentacionDROPIT img {
-    width: 100%;
-    height: 100%; }
 
 .banner img {
   width: 100%;
@@ -104,7 +131,7 @@ a i {
   grid-column: 4/9; }
 
 .subtitulo {
-  color: #f1bb57;
+  color: #ffff00;
   margin-bottom: 5%;
   font-size: 3vw;
   grid-column: 3/9;
@@ -148,7 +175,7 @@ nav ul {
   margin-right: 0.2vw; }
 
 .menuDesplegable__iconos i:hover {
-  color: #f1bb57; }
+  color: #ffff00; }
 
 /* uso mixin */
 .mapa {
@@ -206,7 +233,7 @@ nav ul {
     font-size: 2vw;
     text-align: right; }
     .redes-sociales .redes-iconos i:hover {
-      color: #f1bb57; }
+      color: #ffff00; }
 
 .info strong {
   color: white; }
@@ -333,10 +360,11 @@ label {
 /* GRID para HTML index */
 .main, .cuerpoPruebaHome {
   display: grid;
-  height: 80vh;
+  height: 100vh;
   width: 100%;
   grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(10, 1fr); }
+  grid-template-rows: repeat(10, 1fr);
+  background-color: #f1eded; }
 
 .texto {
   font-size: 2.2vw;
@@ -467,7 +495,13 @@ label {
   .diaHora input {
     width: 9vw; }
   .diaHora label input {
-    margin-right: -3vw; } }
+    margin-right: -3vw; }
+  .carousel-inner {
+    height: 16vh; }
+  .opcionesNUEVAS img {
+    width: 8vw; }
+  .cabecera a i {
+    font-size: 5.5vw; } }
 
 @media screen and (max-width: 531px) {
   .formRegistro {
@@ -506,4 +540,27 @@ label {
   .menuDesplegable__iconos {
     font-size: 2vw; }
     .menuDesplegable__iconos i {
-      font-size: 2vw; } }
+      font-size: 2vw; }
+  .cabecera a i {
+    font-size: 10.5vw; }
+  .opcionesNUEVAS {
+    height: 5vh;
+    margin-top: -25vw;
+    grid-row: 3; }
+  .opcionesNUEVAS img {
+    width: 6vw; }
+  #carouselExampleCaptions {
+    width: 10vw;
+    margin-top: -20vw;
+    grid-row: 4; }
+  .carousel-inner {
+    margin-top: -12vw;
+    height: 11vh; }
+  .tarjeta-presentacion {
+    margin-top: -15vw;
+    grid-row: 5; }
+  .presentacionDROPIT {
+    margin-top: -15vw; }
+  .opcionesNUEVAS img {
+    width: 10vw;
+    margin-top: 0vw; } }
