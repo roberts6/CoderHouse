@@ -1,0 +1,48 @@
+<form id="fs-frm" name="registration-form" accept-charset="utf-8" action="https://formspree.io/f/{form_id}" method="post">
+    <fieldset id="fs-frm-inputs">
+      <label for="full-name">Nombre completo</label>
+      <input type="text" name="name" id="full-name" placeholder="Nombre y Apellido" required="">
+      <label for="email-address">Para mantenerte al tanto necesitamos tu correo</label>
+      <input type="email" name="_replyto" id="email-address" placeholder="alguien@algo.com" required="">
+      <label for="street-address">Solo por si acaso necesitamos tu dirección</label>
+      <input type="text" name="street" id="street-address" placeholder="Siempre viva 742" required="">
+        <label for="street-address">No te vamos a llamar pero...</label>
+      <input type="phone" name="Cel" id="" placeholder="555 444 666" required="">
+      <fieldset class="Ciudad">
+        <legend>Ciudad</legend>
+        <input type="text" name="city" placeholder="C.A.B.A" required="">
+        <select name="Provincia" required="">
+          <option value="" selected="" disabled="">Provincia</option>
+            <option value="BA">Buenos Aires</option>
+            <option value="CABA">Ciudad Autónoma de Buenos Aires</option>
+            <option value="CA">Catamarca</option>
+            <option value="CH">Chaco</option>
+            <option value="CHU">Chubut</option>
+            <option value="CO">Córdoba</option>
+            <option value="CO">Corrientes</option>
+            <option value="ER">Entre Ríos</option>
+            <option value="FO">Formosa</option>
+            <option value="JU">Jujuy</option>
+            <option value="LP">La Pampa</option>
+            <option value="LR">La Rioja</option>
+            <option value="ME">Mendoza</option>
+            <option value="MI">Misiones</option>
+            <option value="NE">Neuquén</option>
+            <option value="RN">Río Negro</option>
+            <option value="SA">Salta</option>
+            <option value="SAN">San Juan</option>
+            <option value="SL">San Luis</option>
+            <option value="SC">Santa Cruz</option>
+            <option value="SF">Santa Fe</option>
+            <option value="SdE">Santiago del Estero</option>
+            <option value="TdF">Tierra del Fuego</option>
+            <option value="TU">Tucumán</option>
+        </select>
+        <input type="text" name="postal-code" placeholder="código postal" required>
+      </fieldset>
+      <label for="note">Algo más que creas imporntante para ubicarte?</label>
+      <textarea rows="2" name="note" id="note" placeholder="Información adicional"></textarea>
+      <input type="hidden" name="_subject" id="email-subject" value="Registration Form Submission">
+    </fieldset>
+    <input type="submit" value="Registro">
+  </form>
