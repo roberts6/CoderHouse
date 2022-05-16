@@ -63,6 +63,7 @@ $redes:(
             grid-column: 13;
             align-content: center;
             align-items: center;
+            font-size: 1.5vw;
 .nav-link{
  color: $color-titulo;
 &:hover{
@@ -90,6 +91,7 @@ $redes:(
 
 
 #carouselExampleCaptions{
+    display: grid;
     grid-row: 2;
 }
 
@@ -671,14 +673,6 @@ $redes:(
     
     @media screen and (max-width: 890px) {
         
-        .mapa {
-            grid-column: 2/10;
-        }
-    
-        #googleMap img {
-            width: 75vw;
-        }
-        
         .chat {
         margin: -34vw 1vw;
         }
@@ -784,7 +778,7 @@ $redes:(
 
         .opcionesNUEVAS{
             height: 5vh;
-            margin-top: -25vw;
+            margin-bottom: 20vw;
             grid-row: 1;
         }
 
@@ -799,22 +793,25 @@ $redes:(
         }
 
         .carousel-inner{
-            margin-top: -12vw;
             height: 11vh;
         }
 
-        .tarjeta-presentacion{
-            margin-top: -15vw;
-            grid-row: 3;
-        }
-
-        .presentacionDROPIT{
-            margin-top: -15vw;
-        } 
-        
         .opcionesNUEVAS img{
             width: 10vw;
             margin-top: 0vw;
         }
+
+        .nav-item{
+            a{
+            i{
+                font-size: 3.5vw;
+            }
+            }
+        }
+
+        .tarjeta-presentacion{
+            margin-top: -14vw;
+        }
+
     }
 

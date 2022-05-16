@@ -32,7 +32,8 @@ header {
   .opcionesNUEVAS .nav {
     grid-column: 13;
     align-content: center;
-    align-items: center; }
+    align-items: center;
+    font-size: 1.5vw; }
     .opcionesNUEVAS .nav .nav-link {
       color: #2f71d3; }
       .opcionesNUEVAS .nav .nav-link:hover {
@@ -49,6 +50,7 @@ header {
       color: #ffff00; }
 
 #carouselExampleCaptions {
+  display: grid;
   grid-row: 2; }
 
 .carousel-inner {
@@ -480,10 +482,6 @@ label {
 
 /* RESPONSIVE */
 @media screen and (max-width: 890px) {
-  .mapa {
-    grid-column: 2/10; }
-  #googleMap img {
-    width: 75vw; }
   .chat {
     margin: -34vw 1vw; }
   .chat i {
@@ -543,7 +541,7 @@ label {
       font-size: 2vw; }
   .opcionesNUEVAS {
     height: 5vh;
-    margin-top: -25vw;
+    margin-bottom: 20vw;
     grid-row: 1; }
   .opcionesNUEVAS img {
     width: 6vw; }
@@ -552,13 +550,11 @@ label {
     margin-top: -20vw;
     grid-row: 2; }
   .carousel-inner {
-    margin-top: -12vw;
     height: 11vh; }
-  .tarjeta-presentacion {
-    margin-top: -15vw;
-    grid-row: 3; }
-  .presentacionDROPIT {
-    margin-top: -15vw; }
   .opcionesNUEVAS img {
     width: 10vw;
-    margin-top: 0vw; } }
+    margin-top: 0vw; }
+  .nav-item a i {
+    font-size: 3.5vw; }
+  .tarjeta-presentacion {
+    margin-top: -14vw; } }
