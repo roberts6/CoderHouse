@@ -91,7 +91,52 @@ header {
   display: flex;
   flex-direction: row; }
   .form-check .form-check-label {
-    font-size: 1vw; }
+    font-size: 1.5vw; }
+
+.regresoIndex {
+  display: flex;
+  justify-content: center; }
+  .regresoIndex a i {
+    justify-content: center;
+    color: #2f71d3; }
+    .regresoIndex a i:hover {
+      color: #c0c0c0; }
+
+.btn a {
+  color: white; }
+  .btn a:hover {
+    color: white; }
+
+.form-check-label {
+  color: #2f71d3; }
+
+fieldset {
+  display: flex;
+  width: 90%;
+  text-align: start;
+  padding: 2%;
+  border: none;
+  flex-direction: column;
+  margin: 3vw 0; }
+
+form fieldset input {
+  margin-bottom: 1vw; }
+
+div .form-select {
+  width: 36vw; }
+
+.mb-3 textarea {
+  width: 36vw; }
+
+.mb-3 .form-control {
+  width: 80%; }
+
+.mb-3 .form-select {
+  width: 80%; }
+
+.col-sm-10 .form-control {
+  width: 80%;
+  margin-left: 4vw; }
 
 .banner img {
   width: 100%;
@@ -261,8 +306,9 @@ nav ul {
 
 .copyright {
   width: 45vw;
-  margin-top: 4%;
-  color: #2f71d3; }
+  color: #2f71d3;
+  display: flex;
+  justify-content: center; }
 
 p {
   margin: 1% 10%;
@@ -275,7 +321,8 @@ p {
   font-size: 5vw;
   text-decoration: none;
   cursor: auto;
-  margin: 3vh -15vw 0vw; }
+  margin: 3vh -15vw 0vw;
+  color: #c0c0c0; }
 
 .formulario-registro {
   display: flex;
@@ -458,10 +505,10 @@ label {
   width: 20vw; }
 
 .footer {
-  grid-column: 5/7;
-  grid-row: 9;
-  font-size: 1.2vw;
-  margin-top: 2vw; }
+  grid-row: 10;
+  grid-column: 1/11;
+  font-size: 1.5vw;
+  margin: 0 auto; }
 
 /* GRID para HTML de registro */
 .formRegistro {
@@ -478,28 +525,42 @@ label {
 .tiendaDigital {
   grid-column: 3/9;
   grid-row: 5;
-  font-size: 1.5vw; }
+  font-size: 1.5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #2f71d3; }
 
 /* RESPONSIVE */
+@media screen and (min-width: 1001px) {
+  .form-check-label {
+    font-size: 1.5vw; } }
+
+@media screen and (max-width: 1000px) {
+  .carousel-inner {
+    height: 15vh; } }
+
 @media screen and (max-width: 890px) {
-  .chat {
-    margin: -34vw 1vw; }
-  .chat i {
-    font-size: 5vw;
-    margin-top: 50vh; }
-  .main .anuncio, .cuerpoPruebaHome .anuncio {
-    font-size: 1.5vw;
-    height: 6vw;
-    width: 14vw;
-    overflow: scroll; }
-  .diaHora input {
-    width: 9vw; }
+  .mb-3 .form-label {
+    font-size: 5.5vw; }
+  .opcionesNUEVAS .nav {
+    font-size: 2.5vw; }
+  .nav-item a i {
+    font-size: 2.5vw; }
+  .validationTextarea {
+    font-size: 4vw; }
+  .form-check .form-check-label {
+    font-size: 3vw; }
   .diaHora label input {
     margin-right: -3vw; }
   .carousel-inner {
     height: 16vh; }
   .opcionesNUEVAS img {
-    width: 8vw; } }
+    width: 8vw; }
+  .col-sm-10 .form-control {
+    margin: auto; }
+  .regresoIndex a i {
+    font-size: 6vw; } }
 
 @media screen and (max-width: 531px) {
   .formRegistro {
@@ -557,4 +618,6 @@ label {
   .nav-item a i {
     font-size: 3.5vw; }
   .tarjeta-presentacion {
-    margin-top: -14vw; } }
+    margin-top: -14vw; }
+  .form-check .form-check-label {
+    font-size: 3vw; } }
