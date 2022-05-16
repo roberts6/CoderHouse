@@ -44,37 +44,25 @@ $redes:(
         @extend .main
     }
 
-    .cabecera{
-        height: 7vh;
-        width: 100vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-       a i{
-            font-size: 2.5vw;
-            color: $color-titulo;
-            &:active{
-                color: #ffff00;
-            }
-        }
-    }
-
     .opcionesNUEVAS{
         background-color: #c0c0c0;
         display: grid;
-        grid-row: 2;
+        grid-row: 1;
         grid-column: 1/11;
         height: 7vh;
         justify-items: center;
+        justify-content: space-between;
+        height: 8vh;
         img{
             display: grid;
             grid-column: 1;
-            width: 6vh;
-            margin: 5%;
+            width: 7vh;
+            margin: 10%;
         }
         .nav{
             grid-column: 13;
             align-content: center;
+            align-items: center;
 .nav-link{
  color: $color-titulo;
 &:hover{
@@ -86,14 +74,23 @@ $redes:(
         }
     }
 
+
 .nav-item{
     a{
     text-decoration: none;
+    i{
+        color: $color-titulo;
+        font-size: 1.5vw;
+        &:active{
+            color: #ffff00;
+        } 
+    }
     }
 }
 
+
 #carouselExampleCaptions{
-    grid-row: 3;
+    grid-row: 2;
 }
 
 .carousel-inner{
@@ -106,7 +103,7 @@ $redes:(
 }
 
 .tarjeta-presentacion{
-    grid-row: 4;
+    grid-row: 3;
     grid-column: 1/11;
     img{
         width: 25vw;
@@ -136,6 +133,14 @@ $redes:(
         img{
             width: 8%;
         }
+    }
+}
+
+.form-check{
+    display: flex;
+    flex-direction: row;
+    .form-check-label{
+        font-size: 1vw;
     }
 }
 
@@ -218,7 +223,7 @@ $redes:(
     }
 
     .menuHamburguesa:hover{
-         li{
+    li{
       display: flex;
       margin-top: 1vw;
       text-align: right;
@@ -705,15 +710,6 @@ $redes:(
         .opcionesNUEVAS img{
             width: 8vw;
         }
-    
-        .cabecera{
-            a{
-                i{
-                    font-size: 5.5vw;
-                }
-            }
-        }
-
     }
     
     @media screen and (max-width: 531px) {
@@ -786,14 +782,10 @@ $redes:(
             }
         }
 
-        .cabecera a i {
-            font-size: 10.5vw;
-        }
-
         .opcionesNUEVAS{
             height: 5vh;
             margin-top: -25vw;
-            grid-row: 3;
+            grid-row: 1;
         }
 
         .opcionesNUEVAS img{
@@ -803,7 +795,7 @@ $redes:(
         #carouselExampleCaptions{
             width: 10vw;
             margin-top: -20vw;
-            grid-row: 4;
+            grid-row: 2;
         }
 
         .carousel-inner{
@@ -813,16 +805,16 @@ $redes:(
 
         .tarjeta-presentacion{
             margin-top: -15vw;
-            grid-row: 5;
+            grid-row: 3;
         }
 
         .presentacionDROPIT{
             margin-top: -15vw;
-        }
-
+        } 
+        
         .opcionesNUEVAS img{
             width: 10vw;
             margin-top: 0vw;
         }
-        
     }
+

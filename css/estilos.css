@@ -15,33 +15,24 @@ html {
 header {
   object-fit: cover; }
 
-.cabecera {
-  height: 7vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .cabecera a i {
-    font-size: 2.5vw;
-    color: #2f71d3; }
-    .cabecera a i:active {
-      color: #ffff00; }
-
 .opcionesNUEVAS {
   background-color: #c0c0c0;
   display: grid;
-  grid-row: 2;
+  grid-row: 1;
   grid-column: 1/11;
   height: 7vh;
-  justify-items: center; }
+  justify-items: center;
+  justify-content: space-between;
+  height: 8vh; }
   .opcionesNUEVAS img {
     display: grid;
     grid-column: 1;
-    width: 6vh;
-    margin: 5%; }
+    width: 7vh;
+    margin: 10%; }
   .opcionesNUEVAS .nav {
     grid-column: 13;
-    align-content: center; }
+    align-content: center;
+    align-items: center; }
     .opcionesNUEVAS .nav .nav-link {
       color: #2f71d3; }
       .opcionesNUEVAS .nav .nav-link:hover {
@@ -51,9 +42,14 @@ header {
 
 .nav-item a {
   text-decoration: none; }
+  .nav-item a i {
+    color: #2f71d3;
+    font-size: 1.5vw; }
+    .nav-item a i:active {
+      color: #ffff00; }
 
 #carouselExampleCaptions {
-  grid-row: 3; }
+  grid-row: 2; }
 
 .carousel-inner {
   position: relative;
@@ -64,7 +60,7 @@ header {
   margin: 0; }
 
 .tarjeta-presentacion {
-  grid-row: 4;
+  grid-row: 3;
   grid-column: 1/11; }
   .tarjeta-presentacion img {
     width: 25vw; }
@@ -88,6 +84,12 @@ header {
       font-weight: bold; }
     .presentacionDROPIT .presentacionDROPIT__texto img {
       width: 8%; }
+
+.form-check {
+  display: flex;
+  flex-direction: row; }
+  .form-check .form-check-label {
+    font-size: 1vw; }
 
 .banner img {
   width: 100%;
@@ -499,9 +501,7 @@ label {
   .carousel-inner {
     height: 16vh; }
   .opcionesNUEVAS img {
-    width: 8vw; }
-  .cabecera a i {
-    font-size: 5.5vw; } }
+    width: 8vw; } }
 
 @media screen and (max-width: 531px) {
   .formRegistro {
@@ -541,24 +541,22 @@ label {
     font-size: 2vw; }
     .menuDesplegable__iconos i {
       font-size: 2vw; }
-  .cabecera a i {
-    font-size: 10.5vw; }
   .opcionesNUEVAS {
     height: 5vh;
     margin-top: -25vw;
-    grid-row: 3; }
+    grid-row: 1; }
   .opcionesNUEVAS img {
     width: 6vw; }
   #carouselExampleCaptions {
     width: 10vw;
     margin-top: -20vw;
-    grid-row: 4; }
+    grid-row: 2; }
   .carousel-inner {
     margin-top: -12vw;
     height: 11vh; }
   .tarjeta-presentacion {
     margin-top: -15vw;
-    grid-row: 5; }
+    grid-row: 3; }
   .presentacionDROPIT {
     margin-top: -15vw; }
   .opcionesNUEVAS img {
