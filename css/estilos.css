@@ -28,7 +28,7 @@ header {
     display: grid;
     grid-column: 1;
     width: 7vh;
-    margin: 10%; }
+    margin: 0 10%; }
   .opcionesNUEVAS .nav {
     grid-column: 13;
     align-content: center;
@@ -40,6 +40,21 @@ header {
         font-style: italic;
         font-weight: bolder;
         color: #2f71d3; }
+
+.logoYnombre {
+  display: flex;
+  color: #2f71d3;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center; }
+  .logoYnombre a {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    text-decoration: none; }
+    .logoYnombre a label {
+      cursor: pointer; }
 
 .nav-item a {
   text-decoration: none; }
@@ -77,15 +92,13 @@ header {
   .presentacionDROPIT .presentacionDROPIT__texto {
     grid-column: 3/9;
     font-size: 1.5vw;
-    text-align: center;
-    color: #2f71d3; }
+    text-align: center; }
     .presentacionDROPIT .presentacionDROPIT__texto h1 {
-      font-size: 10vw;
-      color: #2f71d3; }
+      font-size: 10vw; }
     .presentacionDROPIT .presentacionDROPIT__texto span {
       font-weight: bold; }
     .presentacionDROPIT .presentacionDROPIT__texto img {
-      width: 8%; }
+      width: 20%; }
 
 .form-check {
   display: flex;
@@ -197,20 +210,6 @@ a i {
   font-size: 3vw;
   color: #2f71d3; }
 
-.menuHamburguesa li {
-  display: none; }
-
-.menuHamburguesa:hover li {
-  display: flex;
-  margin-top: 1vw;
-  text-align: right;
-  z-index: 1000; }
-
-.menuDesplegable__absolute {
-  position: absolute; }
-  .menuDesplegable__absolute ul {
-    margin-top: 30%; }
-
 nav ul {
   grid-column: 10;
   grid-row: 2/3; }
@@ -255,9 +254,12 @@ nav ul {
 
 .iconos {
   display: flex;
-  justify-content: space-around;
   cursor: pointer;
-  margin: 2vw 0 0 0; }
+  margin: 2vw 0 0 0;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+  padding: 0; }
 
 .iconos li {
   padding: 0vw 3vw; }
@@ -418,7 +420,7 @@ label {
   background-color: #f1eded; }
 
 .texto {
-  font-size: 2.2vw;
+  font-size: 1.8vw;
   text-align: left; }
 
 .mapa {
@@ -528,13 +530,27 @@ label {
   font-size: 1.5vw;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  color: #2f71d3; }
+  align-items: center; }
 
 /* RESPONSIVE */
 @media screen and (min-width: 1001px) {
   .form-check-label {
-    font-size: 1.5vw; } }
+    font-size: 1.5vw; }
+  .presentacionDROPIT {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .presentacionDROPIT .presentacionDROPIT__texto {
+      grid-column: 3/9;
+      font-size: 1.5vw;
+      text-align: center; }
+      .presentacionDROPIT .presentacionDROPIT__texto h1 {
+        font-size: 10vw; }
+        .presentacionDROPIT .presentacionDROPIT__texto h1 img {
+          width: 20%;
+          font-size: 10vw; }
+      .presentacionDROPIT .presentacionDROPIT__texto span {
+        font-weight: bold; } }
 
 @media screen and (max-width: 1000px) {
   .carousel-inner {
@@ -560,7 +576,14 @@ label {
   .col-sm-10 .form-control {
     margin: auto; }
   .regresoIndex a i {
-    font-size: 6vw; } }
+    font-size: 6vw; }
+  .presentacionDROPIT {
+    flex-direction: column; }
+  .tarjeta-presentacion img {
+    width: 55vw; }
+  .presentacionDROPIT .presentacionDROPIT__texto {
+    font-size: 3vw;
+    margin: 2vw 0; } }
 
 @media screen and (max-width: 531px) {
   .formRegistro {
@@ -582,12 +605,6 @@ label {
     display: flex;
     height: 2.5vh;
     width: 20vw; }
-  .redes-sociales {
-    grid-row: 5/10;
-    margin-top: auto;
-    margin-bottom: 7rem; }
-    .redes-sociales .redes-iconos li {
-      margin-right: 1.5vw; }
   .titulos {
     grid-row: 1; }
   .mediosDePago {
@@ -618,6 +635,10 @@ label {
   .nav-item a i {
     font-size: 3.5vw; }
   .tarjeta-presentacion {
-    margin-top: -14vw; }
+    margin-top: 5vw; }
   .form-check .form-check-label {
-    font-size: 3vw; } }
+    font-size: 3vw; }
+  .nav-item {
+    margin: -1.5vw; }
+  .texto {
+    font-size: 2.2vw; } }
