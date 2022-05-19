@@ -714,7 +714,16 @@ textarea{
     }
 
     
-@media screen and (max-width: 1000px) {
+@media screen and (min-width: 891px) {
+    .opcionesNUEVAS .nav {
+        font-size: 2.5vw;
+    }
+    .nav-item a i {
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (min-width: 1000px) {
     .carousel-inner {
         height: 15vh;
     }
