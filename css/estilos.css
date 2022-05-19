@@ -472,6 +472,10 @@ label {
   align-items: center; }
 
 /* RESPONSIVE */
+@media screen and (min-width: 1200px) {
+  .opcionesNUEVAS {
+    height: 8.5vw; } }
+
 @media screen and (min-width: 1001px) {
   .form-check-label {
     font-size: 1.5vw; }
@@ -499,7 +503,9 @@ label {
   .opcionesNUEVAS .nav {
     font-size: 2vw; }
   .nav-item a i {
-    font-size: 2vw; } }
+    font-size: 2vw; }
+  .logoYnombre label {
+    font-size: 4vw; } }
 
 @media screen and (min-width: 1000px) {
   .carousel-inner {

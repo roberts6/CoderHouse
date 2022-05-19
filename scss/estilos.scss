@@ -673,6 +673,13 @@ textarea{
     
     /* RESPONSIVE */
 
+
+    @media screen and (min-width: 1200px){
+        .opcionesNUEVAS{
+            height: 8.5vw;
+        }
+    }
+
     @media screen and (min-width: 1001px) {
         .form-check-label{
             font-size: 1.5vw;
@@ -720,6 +727,12 @@ textarea{
     }
     .nav-item a i {
         font-size: 2vw;
+    }
+
+    .logoYnombre{
+        label{
+            font-size: 4vw;
+        }
     }
 }
 
