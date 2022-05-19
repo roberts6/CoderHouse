@@ -497,9 +497,9 @@ label {
 
 @media screen and (min-width: 891px) {
   .opcionesNUEVAS .nav {
-    font-size: 2.5vw; }
+    font-size: 2vw; }
   .nav-item a i {
-    font-size: 2.5vw; } }
+    font-size: 2vw; } }
 
 @media screen and (min-width: 1000px) {
   .carousel-inner {
@@ -628,7 +628,7 @@ label {
   .opcionesNUEVAS {
     height: 15.5vh; }
     .opcionesNUEVAS .nav-link {
-      font-size: 2.5vw; }
+      font-size: 2vw; }
   .logoYnombre a img {
     width: 11.5vh; }
   .logoYnombre a label {
