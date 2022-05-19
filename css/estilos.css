@@ -474,7 +474,7 @@ label {
 /* RESPONSIVE */
 @media screen and (min-width: 1200px) {
   .opcionesNUEVAS {
-    height: 8.5vw; } }
+    height: 9.5vw; } }
 
 @media screen and (min-width: 1001px) {
   .form-check-label {
