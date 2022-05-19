@@ -49,7 +49,6 @@ $redes:(
         display: grid;
         grid-row: 1;
         grid-column: 1/11;
-        height: 7vh;
         justify-items: center;
         justify-content: space-between;
         height: 8vh;
@@ -959,5 +958,23 @@ label{
 
     .opcionesNUEVAS{
         height: 15.5vh;
+        .nav-link{
+            font-size: 2.5vw;
+        }
     }
+
+.logoYnombre{
+    a{
+        img{
+            width: 11.5vh;
+        }
+        label{
+            font-size: 4.5vw;
+        }
+    }
+}
+
+.nav-item a i {
+    font-size: 2.5vw;
+}
 }

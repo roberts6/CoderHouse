@@ -20,7 +20,6 @@ header {
   display: grid;
   grid-row: 1;
   grid-column: 1/11;
-  height: 7vh;
   justify-items: center;
   justify-content: space-between;
   height: 8vh; }
@@ -621,4 +620,12 @@ label {
   .carousel-inner {
     height: 32vh; }
   .opcionesNUEVAS {
-    height: 15.5vh; } }
+    height: 15.5vh; }
+    .opcionesNUEVAS .nav-link {
+      font-size: 2.5vw; }
+  .logoYnombre a img {
+    width: 11.5vh; }
+  .logoYnombre a label {
+    font-size: 4.5vw; }
+  .nav-item a i {
+    font-size: 2.5vw; } }
